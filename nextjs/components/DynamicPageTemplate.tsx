@@ -12,6 +12,7 @@ export function DynamicPageTemplate({
   page,
   relatedPages = [],
 }: DynamicPageTemplateProps) {
+  console.log("RENDER DEBUG - Image URL:", page.image_url);
   return (
     <article>
       {/* Hero Section */}

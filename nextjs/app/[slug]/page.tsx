@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { DynamicPageTemplate } from '@/components/DynamicPageTemplate'
-// Ensure these functions in getPageData are updated to filter by validation_status
 import { getPageData, getAllSlugs, getPagesByCategory } from '@/lib/getPageData'
 
 interface PageProps {
@@ -14,7 +13,7 @@ export async function generateMetadata(
   const { slug } = await params
   const page = await getPageData(slug)
 
-  // If page doesn't exist or isn't validated, getPageData will return null
+  // getPageData filters by validation_status; if not validated, returns null
   if (!page) {
     return { title: 'Page Not Found' }
   }
@@ -26,8 +25,8 @@ export async function generateMetadata(
 }
 
 export async function generateStaticParams() {
-  /** * CRITICAL CHANGE: 
-   * getAllSlugs() must now only return slugs where validation_status is "Validated"
+  /** * getAllSlugs() is updated in lib/getPageData.ts 
+   * to only return slugs where validation_status match "Validated*"
    **/
   const slugs = await getAllSlugs()
 
@@ -40,8 +39,7 @@ export default async function Page({ params }: PageProps) {
   const { slug } = await params
   const page = await getPageData(slug)
 
-  // This ensures that if a user tries to visit a "Failed" slug directly via URL, 
-  // they get a 404 instead of a broken page.
+  // Guard: returns 404 if page is missing or failed FastAPI validation
   if (!page) {
     notFound()
   }
@@ -51,7 +49,7 @@ export default async function Page({ params }: PageProps) {
   if (page.category) {
     const categoryPages = await getPagesByCategory(page.category)
 
-    // Filter related pages to also ensure they are validated
+    // Secondary filter to ensure related content is also strictly validated
     relatedPages = categoryPages
       .filter((p: any) => 
         p.slug.current !== page.slug.current && 

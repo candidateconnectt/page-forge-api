@@ -1,27 +1,22 @@
 from app.sanityclient import fetch_all_pages
-from app.models import Page # Fixed: was Post
 
 async def validate_batch(pages, project_id, dataset, token):
-    existing_pages = await fetch_all_pages()
+    # Fetch data ONLY for this specific project
+    existing_pages = await fetch_all_pages(project_id, dataset, token)
     
     results = []
-    duplicates_found = False
-
     for page in pages:
-        # Extract slug string safely
         current_slug = page.slug.get("current")
         
-        # Filter existing data to avoid comparing a document against itself
+        # Logic to compare against other documents in the SAME project
         other_slugs = {p["slug"] for p in existing_pages if p["_id"] != page.id}
         other_titles = {p["title"] for p in existing_pages if p["_id"] != page.id}
 
         if current_slug in other_slugs:
-            duplicates_found = True
             results.append({"status": "error", "reason": "Duplicate slug"})
             continue
 
         if page.title in other_titles:
-            duplicates_found = True
             results.append({"status": "error", "reason": "Duplicate title"})
             continue
 
@@ -32,4 +27,4 @@ async def validate_batch(pages, project_id, dataset, token):
 
         results.append({"status": "success"})
 
-    return results, duplicates_found
+    return results

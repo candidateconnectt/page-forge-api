@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "blue-denim",
+    "title": "Classic Blue Denim Jacket",
+    "body": "Premium 12oz denim with a relaxed fit and copper buttons.",
+    "image_url": "https://plus.unsplash.com/premium_photo-1674828600712-7d0caab39109?q=80&w=708&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "outerwear",
+    "seo_description": "Shop our durable blue denim jacket with a comfortable relaxed fit."
+  },
+  {
+    "slug": "chino-black",
+    "title": "Slim Fit Chinos - Black",
+    "body": "Stretch-cotton twill chinos designed for a modern, tapered silhouette.",
+    "image_url": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?q=80&w=1152&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "bottoms",
+    "seo_description": "Versatile black slim-fit chinos for office or casual wear."
+  },
+  {
+    "slug": "white-tee",
+    "title": "Oversized Heavyweight Tee",
+    "body": "Drop-shoulder cotton t-shirt with a thick ribbed neckband.",
+    "image_url": "https://plus.unsplash.com/premium_photo-1718913936342-eaafff98834b?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "tops",
+    "seo_description": "Premium white oversized t-shirt made from 100% heavy cotton."
+  },
+  {
+    "slug": "summer-dress",
+    "title": "Floral Print Summer Dress",
+    "body": "Lightweight linen blend dress with a wrap front and a-line skirt.",
+    "image_url": "https://plus.unsplash.com/premium_photo-1723914108893-ac3047a4f1df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "dresses",
+    "seo_description": "Breathable floral dress perfect for summer outings and beach days."
+  },
+  {
+    "slug": "leather-boots",
+    "title": "Leather Chelsea Boots footwear",
+    "body": "Hand-stitched genuine leather boots with elastic side panels.",
+    "image_url": "https://images.unsplash.com/photo-1608629601270-a0007becead3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "footwear",
+    "seo_description": "Timeless black leather chelsea boots with a sleek, polished finish."
+  }
+]
