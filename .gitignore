@@ -1,0 +1,13 @@
+# Ignore environment files
+.env
+fastapi/.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore local JSON test data
+forge-data.json
+input-data.json
+new-sample.json
+sample-data.json
