@@ -53,3 +53,28 @@ async def patch_sanity_document(doc_id: str, status_msg: str, project_id: str, d
                 print(f"{RED}📤 PATCH FAILED: {resp.text}{RESET}")
         except Exception as e:
             print(f"{RED}📤 SANITY PATCH ERROR: {e}{RESET}")
+
+async def delete_sanity_document(doc_id: str, project_id: str, dataset: str, token: str):
+    """
+    Deletes a document from Sanity by ID.
+    """
+    url = f"https://{project_id}.api.sanity.io/v2023-01-01/data/mutate/{dataset}"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+
+    payload = {
+        "mutations": [
+            {"delete": {"id": doc_id}}
+        ]
+    }
+
+    async with httpx.AsyncClient() as client:
+        try:
+            resp = await client.post(url, headers=headers, json=payload)
+            resp.raise_for_status()
+            return {"status": "deleted", "id": doc_id}
+        except Exception as e:
+            print(f"{RED}📤 SANITY DELETE ERROR: {e}{RESET}")
+            return {"status": "error", "id": doc_id, "error": str(e)}

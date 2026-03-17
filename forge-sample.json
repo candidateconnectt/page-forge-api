@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "corduroy-jacket",
+    "title": "Corduroy Trucker Jacket",
+    "body": "Vintage-inspired corduroy jacket with button front and chest pockets.",
+    "image_url": "https://i.pinimg.com/736x/b2/3e/ec/b23eeca759c36d902ef9f25ac606a989.jpg",
+    "category": "outerwear",
+    "seo_description": "Retro corduroy jacket perfect for layering in cooler months."
+  },
+  {
+    "slug": "wool-scarf",
+    "title": "Patterned Wool Scarf",
+    "body": "Soft wool scarf with geometric print and fringed edges.",
+    "image_url": "https://i.pinimg.com/736x/b2/3e/ec/b23eeca759c36d902ef9f25ac606a989.jpg",
+    "category": "accessories",
+    "seo_description": "Stay cozy with our patterned wool scarf, ideal for winter."
+  },
+  {
+    "slug": "leather-belt",
+    "title": "Classic Leather Belt",
+    "body": "Handcrafted full-grain leather belt with a polished buckle.",
+    "image_url": "https://i.pinimg.com/1200x/12/d6/ae/12d6ae56515381c364e91fa1104afbbd.jpg",
+    "category": "accessories",
+    "seo_description": "Durable leather belt designed to complement casual and formal looks."
+  },
+  {
+    "slug": "silk-blouse",
+    "title": "Silk Wrap Blouse",
+    "body": "Elegant silk blouse with wrap front and balloon sleeves.",
+    "image_url": "https://i.pinimg.com/1200x/dd/5a/2e/dd5a2e1123fa1c385ac9b7e4c686419b.jpg",
+    "category": "tops",
+    "seo_description": "Luxurious silk blouse that adds sophistication to any outfit."
+  }
+]

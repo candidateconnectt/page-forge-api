@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "apple",
+    "title": "Fresh Red Apple",
+    "body": "A crisp and sweet fruit enjoyed worldwide.",
+    "image_url": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce",
+    "category": "fruits",
+    "seo_description": "Discover the health benefits of apples, a crisp fruit loved worldwide."
+  },
+  {
+    "slug": "banana",
+    "title": "Organic Banana",
+    "body": "A tropical fruit rich in potassium and fiber.",
+    "image_url": "https://images.unsplash.com/photo-1574226516831-e1dff420e12d",
+    "category": "fruits",
+    "seo_description": "Bananas are tropical fruits packed with potassium and energy."
+  },
+  {
+    "slug": "mango",
+    "title": "Juicy Mango",
+    "body": "Known as the king of fruits, sweet and juicy.",
+    "image_url": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+    "category": "fruits",
+    "seo_description": "Mangoes are sweet, juicy fruits often called the king of fruits."
+  },
+  {
+    "slug": "tesla-model-s",
+    "title": "Tesla Model S",
+    "body": "An electric sedan with cutting-edge technology.",
+    "image_url": "https://images.unsplash.com/photo-1617814076361-0e2a9f8d6a2f",
+    "category": "cars",
+    "seo_description": "Tesla Model S is a premium electric sedan with cutting-edge technology."
+  },
+  {
+    "slug": "ford-mustang",
+    "title": "Ford Mustang",
+    "body": "An iconic American muscle car.",
+    "image_url": "https://images.unsplash.com/photo-1502877338535-766e1452684a",
+    "category": "cars",
+    "seo_description": "Ford Mustang is an iconic American muscle car known for performance."
+  },
+  {
+    "slug": "bmw-x5",
+    "title": "BMW X5",
+    "body": "A luxury SUV with advanced features.",
+    "image_url": "https://images.unsplash.com/photo-1617814076361-0e2a9f8d6a2f",
+    "category": "cars",
+    "seo_description": "BMW X5 is a luxury SUV offering comfort and advanced features."
+  },
+  {
+    "slug": "yamaha-r1",
+    "title": "Yamaha R1",
+    "body": "A superbike designed for speed and agility.",
+    "image_url": "https://images.unsplash.com/photo-1620891549029-6c8f8d1f8e6a",
+    "category": "bikes",
+    "seo_description": "Yamaha R1 is a superbike engineered for speed and agility."
+  },
+  {
+    "slug": "honda-cbr500",
+    "title": "Honda CBR500",
+    "body": "A mid-range sport bike for everyday riders.",
+    "image_url": "https://images.unsplash.com/photo-1620891549029-6c8f8d1f8e6a",
+    "category": "bikes",
+    "seo_description": "Honda CBR500 is a mid-range sport bike perfect for everyday riders."
+  },
+  {
+    "slug": "lion",
+    "title": "Lion",
+    "body": "The king of the jungle, strong and majestic.",
+    "image_url": "https://images.unsplash.com/photo-1581888227599-779811f8b5c4",
+    "category": "animals",
+    "seo_description": "Lions are majestic animals often called the king of the jungle."
+  },
+  {
+    "slug": "elephant",
+    "title": "Elephant",
+    "body": "The largest land animal, known for intelligence.",
+    "image_url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2",
+    "category": "animals",
+    "seo_description": "Elephants are the largest land animals, known for intelligence."
+  }
+]
