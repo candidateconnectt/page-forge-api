@@ -34,6 +34,29 @@ Sanity serves as the shared data layer between the two services.
 
 ---
 
+## End-to-End Flow
+```
+Google Drive (CSV Upload)
+        ↓
+n8n Workflow (Automation)
+        ↓
+Sanity CMS (Content Creation)
+        ↓
+FastAPI (Validation Layer)
+        ↓
+Vercel Deploy Hook (Optional)
+        ↓
+Next.js Frontend (Only Valid Pages Rendered)
+```
+
+## Automation with n8n
+
+1. Watches a Google Drive folder
+2. Detects new CSV/JSON uploads
+3. Extracts structured data
+4. Sends it to Sanity CMS
+5. (Then backend validation flow takes over)
+
 ## How It Works
 
 1. Content is created or updated in the embedded Sanity Studio at `/studio`.
