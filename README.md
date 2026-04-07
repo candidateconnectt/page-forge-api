@@ -327,3 +327,7 @@ The following issues are present in the current codebase and should be resolved 
 **No Docker support**: There is no `Dockerfile` or `docker-compose.yml`. Running both services requires manually configuring two independent runtimes.
 
 **`validation_status` not in Sanity schema**: The field is patched onto documents by the backend but is not defined in `pageType.ts`, meaning it is invisible in the Studio and cannot be managed editorially.
+
+## Author
+**Sameer Shah** — AI & Full-Stack Developer  
+[Portfolio](https://sameershah-portfolio.vercel.app/) 
